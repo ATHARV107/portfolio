@@ -1,0 +1,88 @@
+<svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated neural network illustration representing Mithun G M">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4FD1C5" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#4FD1C5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4FD1C5"/>
+      <stop offset="100%" stop-color="#E8A33D"/>
+    </linearGradient>
+    <style>
+      .node { fill: #0B0F14; stroke: #4FD1C5; stroke-width: 2.5; }
+      .node-core { fill: #E8A33D; }
+      .edge { fill: none; stroke: url(#edgeGrad); stroke-width: 1.4; opacity: 0.55; }
+      .pulse {
+        fill: none; stroke: #4FD1C5; stroke-width: 3;
+        stroke-linecap: round; stroke-dasharray: 14 220;
+        animation: travel 3.6s linear infinite;
+      }
+      .pulse2 { animation-delay: 1.2s; stroke: #E8A33D; }
+      .pulse3 { animation-delay: 2.4s; }
+      @keyframes travel {
+        0% { stroke-dashoffset: 234; opacity: 0; }
+        6% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { stroke-dashoffset: 0; opacity: 0; }
+      }
+      .ring { animation: breathe 4s ease-in-out infinite; transform-origin: 240px 240px; }
+      @keyframes breathe {
+        0%, 100% { transform: scale(1); opacity: 0.5; }
+        50% { transform: scale(1.05); opacity: 0.9; }
+      }
+      .node-anim { animation: blink 3.2s ease-in-out infinite; transform-origin: center; }
+      .n1 { animation-delay: 0s; } .n2 { animation-delay: .4s; } .n3 { animation-delay: .8s; }
+      .n4 { animation-delay: 1.2s; } .n5 { animation-delay: 1.6s; } .n6 { animation-delay: 2s; }
+      .n7 { animation-delay: 2.4s; } .n8 { animation-delay: 2.8s; }
+      @keyframes blink {
+        0%, 100% { r: 6; }
+        50% { r: 8.5; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .pulse, .ring, .node-anim { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <circle cx="240" cy="240" r="210" fill="url(#glow)"/>
+  <circle class="ring" cx="240" cy="240" r="170" fill="none" stroke="#4FD1C5" stroke-width="1" stroke-dasharray="2 6" opacity="0.5"/>
+
+  <!-- edges: central hub to outer nodes -->
+  <g>
+    <path class="edge" d="M240,240 L240,90"/>
+    <path class="edge" d="M240,240 L360,150"/>
+    <path class="edge" d="M240,240 L390,240"/>
+    <path class="edge" d="M240,240 L360,330"/>
+    <path class="edge" d="M240,240 L240,390"/>
+    <path class="edge" d="M240,240 L120,330"/>
+    <path class="edge" d="M240,240 L90,240"/>
+    <path class="edge" d="M240,240 L120,150"/>
+    <path class="edge" d="M240,90 L360,150"/>
+    <path class="edge" d="M360,150 L390,240"/>
+    <path class="edge" d="M390,240 L360,330"/>
+    <path class="edge" d="M360,330 L240,390"/>
+    <path class="edge" d="M240,390 L120,330"/>
+    <path class="edge" d="M120,330 L90,240"/>
+    <path class="edge" d="M90,240 L120,150"/>
+    <path class="edge" d="M120,150 L240,90"/>
+  </g>
+
+  <!-- traveling signal pulses along a few paths -->
+  <path class="pulse" d="M240,240 L240,90"/>
+  <path class="pulse pulse2" d="M240,240 L390,240"/>
+  <path class="pulse pulse3" d="M240,240 L120,330"/>
+
+  <!-- outer nodes -->
+  <circle class="node node-anim n1" cx="240" cy="90" r="7"/>
+  <circle class="node node-anim n2" cx="360" cy="150" r="7"/>
+  <circle class="node node-anim n3" cx="390" cy="240" r="7"/>
+  <circle class="node node-anim n4" cx="360" cy="330" r="7"/>
+  <circle class="node node-anim n5" cx="240" cy="390" r="7"/>
+  <circle class="node node-anim n6" cx="120" cy="330" r="7"/>
+  <circle class="node node-anim n7" cx="90" cy="240" r="7"/>
+  <circle class="node node-anim n8" cx="120" cy="150" r="7"/>
+
+  <!-- central hub -->
+  <circle cx="240" cy="240" r="26" fill="#0B0F14" stroke="#E8A33D" stroke-width="3"/>
+  <circle class="node-core" cx="240" cy="240" r="9"/>
+</svg>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mithun G M — AI/ML Researcher specializing in NLP, abstractive summarization, and computer vision.">
+<title>Mithun G M — AI/ML Researcher</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a href="#home" class="logo">Mithun <span>G M</span></a>
+    <div id="menu" class="fas fa-bars" aria-label="Toggle menu"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- hero -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="status">Open to full-time roles, 2026</span>
+      <h1>Mithun G M</h1>
+      <p class="role">AI/ML Researcher <span class="cursor">&mdash;</span> <span class="typing-text"></span></p>
+      <p class="summary">I build and stabilize research-grade ML systems — from a BART-based summarization pipeline improving ROUGE-1 to 42.10, to an OSINT dashboard correlating 400+ IPs and domains across 15 APIs. Currently interning at DRDO's Young Scientist Lab.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn primary">Get in touch</a>
+        <a href="#projects" class="btn">View research</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/mithun-g-m-374419332" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/ATHARV107" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:aryanathrav846@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="avatar-wrap">
+      <img src="images/avatar.svg" alt="Animated neural-network illustration representing Mithun" width="420" height="420">
+    </div>
+  </div>
+</section>
+
+<!-- about -->
+<section id="about">
+  <div class="container">
+    <div class="eyebrow">About</div>
+    <h2 class="section-title">Researcher, first and foremost</h2>
+    <div class="grid">
+      <div>
+        <p>I'm an AI/ML researcher and final-year B.Tech student in Artificial Intelligence and Machine Learning at Garden City University, Bangalore, currently interning at DRDO's Young Scientist Lab on agentic text summarization.</p>
+        <p>Most of my work sits at the intersection of NLP research and shipping working systems: fixing gradient instability in contrastive ranking objectives one week, wiring a Flask + PostgreSQL OSINT dashboard the next. I care about pipelines that don't fall over — crash-safe checkpoints, mixed-precision training that fits constrained GPUs, and results that are actually reproducible.</p>
+        <div class="langs">
+          <span>English</span><span>Hindi</span><span>Kannada</span><span>French (basic)</span>
+        </div>
+      </div>
+      <dl class="facts">
+        <dt>Location</dt><dd>Bangalore, India</dd>
+        <dt>Education</dt><dd>B.Tech, AI &amp; ML — Garden City University (2022–2026), CGPA 9.33/10.0</dd>
+        <dt>Currently</dt><dd>Research Intern, DRDO Young Scientist Lab (through Sep 2026)</dd>
+        <dt>Focus areas</dt><dd>NLP, AI Safety, Computer Vision, OSINT, Cloud Architecture</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- skills -->
+<section id="skills">
+  <div class="container">
+    <div class="eyebrow">Skills</div>
+    <h2 class="section-title">Tools of the trade</h2>
+    <p class="section-lede">The stack I reach for when a research idea needs to become a working, reproducible system.</p>
+    <div class="skills-grid" id="skillsGrid"></div>
+  </div>
+</section>
+
+<!-- experience -->
+<section id="experience">
+  <div class="container">
+    <div class="eyebrow">Experience</div>
+    <h2 class="section-title">Where I've worked</h2>
+    <div class="timeline">
+
+      <div class="item">
+        <div class="period">Mar 2026 – Sep 2026</div>
+        <h3>Research Intern</h3>
+        <div class="org">Young Scientist Lab, DRDO — Text Summarization in Agentic Ways</div>
+        <ul>
+          <li>Designed a three-stage monolingual abstractive summarization pipeline on BART (Base/Large): MLE warm-up, diverse beam-search candidate generation, and BRIO contrastive preference optimization.</li>
+          <li>Researched a Semantic-Driven Dynamic Margin Loss (S-DML) scaling BRIO's ranking margin via cosine similarity; ran a root-cause failure analysis on gradient instability that informed a pivot to a stabilized objective.</li>
+          <li>Benchmarked a static-margin BRIO model, improving ROUGE-1 from a 41.25 MLE baseline to 42.10 across CNN/DailyMail, XSum, and LCSTS.</li>
+          <li>Built a crash-safe candidate generation and JSON serialization pipeline with automatic resume-on-restart and mask-aware mean pooling.</li>
+          <li>Optimized training on a Quadro RTX 6000 (24GB) using FP16 mixed precision, gradient checkpointing, and gradient accumulation.</li>
+        </ul>
+        <div class="metric-row">
+          <span class="metric">ROUGE-1 <b>42.10</b></span>
+          <span class="metric">ROUGE-2 <b>20.45</b></span>
+          <span class="metric">ROUGE-L <b>39.15</b></span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="period">2025 – 2026</div>
+        <h3>Network Research and Analysis Intern</h3>
+        <div class="org">Centre for Artificial Intelligence and Robotics, DRDO</div>
+        <ul>
+          <li>Architected a full-stack OSINT dashboard integrating 15+ APIs across 7 intelligence categories for IP and domain threat analysis.</li>
+          <li>Engineered a consensus engine that normalizes multi-source JSON into a unified schema and resolves conflicts algorithmically.</li>
+          <li>Built the Flask + PostgreSQL (JSONB) backend for non-blocking background tasks with sub-second query performance.</li>
+          <li>Built interactive Chart.js / Leaflet.js dashboards for geolocation, risk profiles, and network analytics.</li>
+          <li>Analyzed and compiled data on 400+ IPs and domains, cutting manual analysis time by 90%.</li>
+        </ul>
+        <div class="metric-row">
+          <span class="metric">IPs/domains <b>400+</b></span>
+          <span class="metric">Manual effort <b>-90%</b></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- projects -->
+<section id="projects">
+  <div class="container">
+    <div class="eyebrow">Selected Work</div>
+    <h2 class="section-title">Research & academic projects</h2>
+    <p class="section-lede">A mix of research on summarization/OSINT and applied computer-vision systems.</p>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- education / certs / publications -->
+<section id="education">
+  <div class="container">
+    <div class="eyebrow">Education & Recognition</div>
+    <h2 class="section-title">Background</h2>
+    <div class="split-two">
+      <div>
+        <h3 style="font-size:1.8rem; margin-bottom:1.6rem;">Education</h3>
+        <div class="card-plain">
+          <h3>B.Tech, Artificial Intelligence &amp; Machine Learning</h3>
+          <div class="org">Garden City University, Bangalore</div>
+          <div class="period">2022 – 2026 · CGPA 9.33/10.0</div>
+          <p>Coursework: Data Structures, Algorithms, Machine Learning, Deep Learning, Computer Vision, Database Management.</p>
+        </div>
+
+        <h3 style="font-size:1.8rem; margin: 3rem 0 1.6rem;">Certifications</h3>
+        <ul class="list-plain">
+          <li><b>OCI AI Foundations Associate</b> — Oracle, 2025</li>
+          <li><b>Customising Your Models with TensorFlow 2</b> — Imperial College London</li>
+          <li><b>Python Programming</b> — Infosys Springboard, 2024</li>
+          <li><b>Cybersecurity</b> — Cisco Networking Academy</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="font-size:1.8rem; margin-bottom:1.6rem;">Publications</h3>
+        <ul class="list-plain">
+          <li><b>"AI for Blind"</b> — OPTIMA Publications, 2024</li>
+          <li><b>"Treatment of Alzheimer's Disease Using AI and VR"</b> — Atlantis Publications / Springer, 2025</li>
+        </ul>
+
+        <h3 style="font-size:1.8rem; margin: 3rem 0 1.6rem;">Achievements</h3>
+        <ul class="list-plain">
+          <li><b>SAP Competition — Runner-Up</b> among 500+ teams</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section id="contact">
+  <div class="container">
+    <div class="eyebrow">Contact</div>
+    <h2 class="section-title">Let's talk</h2>
+    <p class="section-lede">Available for full-time roles starting 2026 — reach out directly or use the form.</p>
+    <div class="contact-wrap">
+      <dl class="contact-info">
+        <dt>Email</dt><dd><a href="mailto:aryanathrav846@gmail.com">aryanathrav846@gmail.com</a></dd>
+        <dt>Phone</dt><dd>+91 8600****4</dd>
+        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/mithun-g-m-374419332" target="_blank" rel="noopener">linkedin.com/in/mithun-g-m-374419332</a></dd>
+        <dt>GitHub</dt><dd><a href="https://github.com/ATHARV107" target="_blank" rel="noopener">github.com/ATHARV107</a></dd>
+      </dl>
+      <form id="contact-form" action="https://formsubmit.co/aryanathrav846@gmail.com" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send message <i class="fas fa-paper-plane"></i></button>
+        <p class="form-note">This form posts to FormSubmit — swap the action URL for your own endpoint (see README) before going live.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h3>Mithun G M</h3>
+        <p>AI/ML researcher working on NLP, summarization, and applied computer vision.</p>
+      </div>
+      <div class="links">
+        <h3>Quick links</h3>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/mithun-g-m-374419332" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ATHARV107" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:aryanathrav846@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="credit">Designed &amp; built by Mithun G M</p>
+  </div>
+</footer>
+
+<a href="#home" class="fas fa-angle-up" id="scroll-top" aria-label="Scroll to top"></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

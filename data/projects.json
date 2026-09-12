@@ -1,0 +1,50 @@
+[
+  {
+    "name": "BRIO / S-DML Abstractive Summarization",
+    "period": "Mar 2026 \u2013 Sep 2026",
+    "tag": "research",
+    "desc": "Three-stage monolingual abstractive summarization pipeline on a BART backbone: MLE warm-up fine-tuning, diverse beam-search candidate generation, and contrastive preference optimization (BRIO). Researched a Semantic-Driven Dynamic Margin Loss (S-DML) that scales the ranking margin using cosine similarity between candidate embeddings.",
+    "metrics": [
+      { "label": "ROUGE-1", "value": "42.10" },
+      { "label": "ROUGE-2", "value": "20.45" },
+      { "label": "ROUGE-L", "value": "39.15" }
+    ],
+    "stack": ["PyTorch", "BART", "HuggingFace", "FP16/AMP", "Gradient Checkpointing"],
+    "links": { "code": "https://github.com/ATHARV107" }
+  },
+  {
+    "name": "OSINT Intelligence Dashboard",
+    "period": "2025 \u2013 2026",
+    "tag": "research",
+    "desc": "Full-stack OSINT dashboard integrating 15+ APIs across 7 intelligence categories, automating IP and domain analysis for cybersecurity threat assessment. Built a consensus engine that normalizes multi-source JSON into a unified schema and resolves conflicts algorithmically.",
+    "metrics": [
+      { "label": "IPs/domains analyzed", "value": "400+" },
+      { "label": "manual analysis time cut", "value": "90%" }
+    ],
+    "stack": ["Flask", "PostgreSQL (JSONB)", "Chart.js", "Leaflet.js", "REST APIs"],
+    "links": { "code": "https://github.com/ATHARV107" }
+  },
+  {
+    "name": "FabriScan AI \u2014 Multi-Task Textile Analysis",
+    "period": "2025 \u2013 2026",
+    "tag": "vision",
+    "desc": "Multi-task learning architecture on a shared Xception backbone that simultaneously classifies garments (14 categories) and regresses fabric composition. A dual-head output with KL-divergence loss predicts blend percentage distributions, with Grad-CAM used to verify the model attends to weave patterns rather than background.",
+    "metrics": [
+      { "label": "Fabric blend MAE", "value": "0.012" },
+      { "label": "Classification accuracy", "value": "85%+" }
+    ],
+    "stack": ["TensorFlow", "Xception", "Albumentations", "tf.data", "Grad-CAM"],
+    "links": { "code": "https://github.com/ATHARV107" }
+  },
+  {
+    "name": "AI Surveillance System",
+    "period": "2023",
+    "tag": "vision",
+    "desc": "Real-time surveillance suite combining YOLOv8 object detection with a multi-threaded, queue-buffered webcam stream. Includes an LBPH facial recognition pipeline, a CNN-based affective computing layer for emotion classification, and a safety-critical detector for weapons (knives, guns, scissors).",
+    "metrics": [
+      { "label": "Frame-skip ratio", "value": "1:10" }
+    ],
+    "stack": ["Python", "OpenCV", "TensorFlow", "YOLOv8", "Caffe SSD"],
+    "links": { "code": "https://github.com/ATHARV107" }
+  }
+]

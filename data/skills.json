@@ -1,0 +1,31 @@
+{
+  "groups": [
+    {
+      "label": "Machine Learning & NLP",
+      "items": [
+        "PyTorch", "TensorFlow", "Transformers (HuggingFace)", "BART / Seq2Seq",
+        "Contrastive Learning (BRIO)", "Multilingual NLP", "Label Smoothing",
+        "Cosine Similarity Scoring"
+      ]
+    },
+    {
+      "label": "Computer Vision",
+      "items": ["OpenCV", "YOLOv8", "CNNs", "Grad-CAM", "Albumentations"]
+    },
+    {
+      "label": "Web & Backend",
+      "items": ["Flask", "Streamlit", "REST APIs", "Chart.js", "Leaflet.js"]
+    },
+    {
+      "label": "Databases",
+      "items": ["PostgreSQL", "MySQL", "JSONB", "Vector Databases"]
+    },
+    {
+      "label": "Engineering Practices",
+      "items": [
+        "Mixed-Precision (FP16/AMP) Training", "Gradient Checkpointing",
+        "GPU Memory Optimization", "Crash-Safe Data Pipelines", "OSINT"
+      ]
+    }
+  ]
+}
