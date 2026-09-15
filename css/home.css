@@ -73,26 +73,71 @@
 }
 
 /* ---------- about ---------- */
-.about .grid{
-  display:grid;
+/* ---------- about ---------- */
+
+#about .grid {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
+  align-items: start;
 }
-.about p{ color: var(--muted); font-size:1.65rem; margin-bottom: 1.6rem; }
-.about .facts{ border-top:1px solid var(--border); padding-top:2.2rem; }
-.about .facts dt{ font-family:var(--font-mono); font-size:1.2rem; color:var(--teal); }
-.about .facts dd{ font-size:1.5rem; margin-bottom:1.6rem; }
-.about .langs span{
-  display:inline-block;
-  font-family:var(--font-mono);
-  font-size:1.2rem;
+
+#about p {
   color: var(--muted);
-  border:1px solid var(--border);
-  border-radius:3px;
-  padding:.5rem 1rem;
-  margin: 0 .6rem .6rem 0;
+  font-size: 1.65rem;
+  line-height: 1.7;
+  margin-bottom: 1.6rem;
 }
-@media(max-width:820px){ .about .grid{ grid-template-columns:1fr; } }
+
+/* ---------- languages ---------- */
+
+#about .langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2.4rem;
+}
+
+#about .langs span {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+/* ---------- facts ---------- */
+
+#about .facts {
+  border-top: 1px solid var(--border);
+  padding-top: 2.2rem;
+  margin: 0;
+}
+
+#about .facts dt {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  color: var(--teal);
+  margin-bottom: 0.4rem;
+}
+
+#about .facts dd {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 0 0 1.6rem;
+}
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 820px) {
+  #about .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
 
 /* ---------- skills ---------- */
 .skills-grid{
